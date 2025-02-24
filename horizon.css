@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.contact-info div {
+    max-width: 300px;
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    color: #003366;
+}
+
+section {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #003366;
+}
+
+section p {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.values ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values li {
+    margin-bottom: 10px;
+}
+
+.products .product-list {
+    margin-bottom: 20px;
+}
+
+.products h3 {
+    color: #003366;
+}
+
+.products ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+  

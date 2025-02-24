@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Chat Box</title>
+    <link rel="icon" href="image/pirate-hat.png">
+    <link rel="stylesheet" href="pirate.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-box">
+            <div class="chat-message">
+                <p><strong>Pirate:</strong> Arrr matey, what be ye wantin'?</p>
+            </div>
+            <input type="text" id="user-input" placeholder="Type yer message..." />
+            <button onclick="pirateResponse()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function pirateResponse() {
+            var userInput = document.getElementById('user-input').value;
+            var chatBox = document.querySelector('.chat-box');
+
+            if (userInput.trim() !== '') {
+                var newMessage = document.createElement('div');
+                newMessage.classList.add('chat-message');
+                newMessage.innerHTML = `<p><strong>You:</strong> ${userInput}</p>`;
+                chatBox.appendChild(newMessage);
+
+                // Pirate's reply
+                var pirateMessage = document.createElement('div');
+                pirateMessage.classList.add('chat-message');
+                pirateMessage.innerHTML = `<p><strong>Pirate:</strong> ${pirateTalk()}</p>`;
+                chatBox.appendChild(pirateMessage);
+
+                // Clear the input field
+                document.getElementById('user-input').value = '';
+                chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+            }
+        }
+
+        function pirateTalk() {
+            const responses = [
+                "Arrr, ye be a clever one!",
+                "Ahoy! Ye be speakin' pirate, I see!",
+                "Shiver me timbers, that's a fine question!",
+                "Aye aye, matey! What else do ye want to know?",
+                "Yo ho ho! That be a fine way to ask.",
+                "Arrr, that be a pirate's way of thinkin'!"
+            ];
+            return responses[Math.floor(Math.random() * responses.length)];
+        }
+    </script>
+
+</body>
+</html>

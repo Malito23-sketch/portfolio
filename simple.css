@@ -1,0 +1,30 @@
+h1{
+    padding: 15px;
+    background-color: rgb(0, 128, 64);
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: rgba(176, 224, 230, 0.377);
+}
+section{
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+a{
+    color: rgb(0, 128, 79);
+    text-decoration: none;
+}
+nav{
+    padding: 5px;
+    padding-bottom: 5px;
+}
+footer{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    text-align: center;
+}
