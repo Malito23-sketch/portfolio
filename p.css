@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0.192);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    width: 97%;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.name{
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0%;
+    color: darkslategrey;
+}
+ul{
+    margin-top: 1%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategrey;
+    margin-top: 1%;
+}
+.info{
+    margin-left: 7%;
+    margin-top: 15%;
+    width: 500px;
+}
+.info h3{
+    font-size: 15px;
+    color: rgba(0, 0, 255, 0.829);
+}
+.info h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+.info button{
+    margin: 20px;
+}
+.one{
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid purple;
+    cursor: pointer;
+}
+.two{
+    color: purple;
+    border: solid purple;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.one:hover{
+    background-color:  rgb(250, 37, 250);
+    transition: .5s;
+}
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.image img{
+    position: absolute;
+    height: 100%;
+    left: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: left 2s ease;
+    border-radius: 50%;
+}
+.image:hover .girl{
+    left: 55%;
+}

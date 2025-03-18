@@ -1,0 +1,15 @@
+body{
+    background-image: url(html\ hand.jpg);
+}
+h1{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+    text-size-adjust: small ;
+}
+nav{
+   a{
+    color: aliceblue ;
+   }
+}
