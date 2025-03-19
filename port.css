@@ -4,7 +4,7 @@
 }
 .main{
     width: 100%;
-    background: url(image/background\ color.jpeg);
+    background: url(pic/bg.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -12,7 +12,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar{
-    margin-top: 40px; /*add width top */
+    margin-top: 80px; /*add width top */
     width: 100%; /*change from 86% to 100*/
     display: flex;
     padding: 15px 0;
@@ -20,14 +20,14 @@
     justify-content: space-between;
 }
 .navbar   .logo{
-    width: 160px;
+    width: 200px;
     cursor: pointer;
-    margin-top: -3%;
-    margin-left: -2%;
+    margin-top: 10px;
+    margin-left: 2%;
 }
 ul{
     margin-top: -4%;
-    /* margin-right: 80px; add it*/
+    margin-right: 80px;/* margin-right: 80px; add it*/
 }
 ul li{
     list-style: none;
@@ -40,6 +40,9 @@ ul li a{
     text-decoration: none;
     color: darkslategray;
     margin-top: -3%;
+}
+ul li a:hover{
+    color: chocolate;
 }
 .info{
     margin-left: 7%;
@@ -85,8 +88,20 @@ ul li a{
     transform: translate(-55%);
     bottom: 0;
     transition: left 2s ease;
-    border-radius: 50%;
 }
 .image:hover .girl{
     left: 55%;
+}
+.fa-brands{
+    font-size: 50px;
+    margin: 20px;
+    transition: .2s ease;
+}
+footer{
+    margin-top: 30px;
+    margin-left: 130px;
+}
+.fa-brands:hover{
+    color: aqua;
+   
 }
